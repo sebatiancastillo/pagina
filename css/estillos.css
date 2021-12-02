@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2? family=Raleway:wght@300;400;700&display=swap');
+:root{
+background:linear-gradient(135, #ff00007e 0% #b9525298 100%);
+--color-primary:#000000;
+--color-secondary:#830f0f;
+--boton-padding: 20px 40px;
+
+
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+#header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background: color 0;;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+.container {
+    width: ; 
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0 ;
+    max-width: 1200px;
+
+
+
+}
+
+.subtitle{
+
+    color: var(--colo-primary) ;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+
+}
+.nav__items--cta{
+    border: 1px solid #fff;
+
+} 
+.hero{
+
+    height: 100vh;
+    background-image:   url('../asets/epocas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative; 
+
+}
+
+.hero {
+padding: 0;
+
+}
+
+.container{
+    padding: 0;
+}
+.nav{
+    
+display: flex;
+    justify-content: flex-end; 
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+
+    
+}
+
+.nav--footer{
+
+    font-weight:300;
+    justify-content: flex-start;
+
+    
+
+}
+.nav__items{
+    color: white;  
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+
+
+.nav__items--footer{
+    
+padding: 10px;
+
+
+}
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: rgb(255, 255, 255); 
+
+
+}
+
+.hero__cta{
+    display: inline-block;
+    background: rgb(141, 137, 137);
+    padding: var(--boton-padding);
+    color:var(--color-primary);
+    text-decoration:none;
+    border-radius: 40px;
+}
+.hero__weve{
+    position:absolute;
+
+    bottom:0;
+    left:0;
+    width: 101%;
+    height:100px;
+    
+
+}
+.hero__texts{
+    width: 80%;
+    margin-bottom: 50px;
+    
+}
+
+.hero__title{
+    font-size: 3.2rem;
+}
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight:300;
+    margin: 15PX 0;
+
+}
+
+
+
+
+
+/*about */
+.container{
+    padding-top: 0;
+    text-align: center;
+
+}
+
+
+.presentation__pinture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.presentationn__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--boton-padding);
+    color: #fff;
+    text-decoration:none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+
+}
+.about{
+    min-height: 400%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+
+}
+.about__img{
+    text-align: center;
+}
+.about__img--left{
+    text-align: center;
+
+
+}
+.about__pinture{
+    max-width: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+
+.about__paragraph{
+margin-bottom: 20px;
+line-height: 1.5;
+font-weight: 390;
+
+}
+
+/*projec*/
+
+.projects{
+    background-color: rgb(#dc143c8c);
+}
+
+.projects__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5"; 
+    gap:10px;
+    
+}
+
+.projects__item{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.projects__item:nth-of-type(1){
+    grid-area: img1;
+}
+
+.projects__item:nth-of-type(2){
+    grid-area: img2;
+}
+
+.projects__item:nth-of-type(4){ 
+    grid-area: img4;
+}
+.projects__item:nth-of-type(5){
+    grid-area: img5 ;
+}
+
+
+.projects__hover{
+    position: absolute; 
+    background: #dc143c8c;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+
+ 
+}
+.projects__item:hover .projects__hover{
+    transform: translateX(0%);
+
+}
+.projects__icon{
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+
+
+ /* testimony */
+
+.testimony__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.testimony__item{
+    width: 95%;
+    margin: 0 auto;
+    background: var(--color-secondary);
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #fff;
+    margin-bottom: 50px;
+    
+
+
+}
+
+.testimony__person{
+    display: flex;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.testimony__img{
+    width: 80%;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 30px;
+
+
+
+}
+
+.testimony__name{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.testimony__verification{
+    color: #000000;
+    font-weight: 700;
+
+}
+
+.testimony__review{
+
+    font-weight: 3000;
+    
+}
+
+/*footer*/
+
+.footer{
+    background:var(--color-primary);
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns:  3fr 2fr;
+    gap: 20px;
+    align-items: center ;
+}
+
+
+.footer__title {
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+
+
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footer__container-icons{
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+
+
+}
+
+.footer__icons{
+    color:inherit;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 60px;
+
+}
+.fab.footer__icon{
+line-height: 60px;
+
+}
